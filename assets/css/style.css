@@ -78,3 +78,74 @@
     padding-right: 15px;
     text-align: center;
   }
+
+  .quiz-main {
+    margin-top: 15px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    border: 1px, solid;
+    border-color: #334e57;
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  .start-game-btn,
+  .next-question-btn,
+  .show-results-btn,
+  .restart-game-btn {
+    font-size: 1.1 rem;
+    font-weight: bold;
+  }
+  
+  #answer-buttons-container button {
+    font-size: 1.1em;
+    margin: 15 0;
+    width: 85%;
+    padding: 12px;
+    border: 1px solid #334e57;
+    margin-bottom: 20px;
+  }
+  
+  #restart-game-btn {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #334e57;
+    border-radius: 6px;
+  }
+  
+  .button:hover {
+    border-color: #334e57;
+    background-color: #d8cfb5;
+  }
+  
+  .btn:hover {
+    border-color: #334e57;
+    background-color: #d8cfb5;
+  }
+  
+  .answer-buttons-container {
+    width: 100%;
+    margin: 25px;
+    display: block;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn.correct {
+    background-color: green;
+  }
+  
+  .btn.wrong {
+    background-color: red;
+  }
