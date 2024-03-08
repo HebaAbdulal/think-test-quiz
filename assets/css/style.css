@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  body {
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background: rgb(43, 31, 5);
+    padding: 0.5rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  #logo {
+    width: 90px;
+    height: 70px;
+    padding: 0;
+  }
