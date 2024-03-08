@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initia-scale=1.0">
+    <title>Think & Test Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--Header Section-->
+    <header>
+        <a href="index.html" title="Home Page (back to homepage)" aria-label="Go to Home Page">
+            <img id="logo" src="assets/images/logo.png" alt="Think and Test logo">
+        </a>
+    </header>
+    <main>
+        <section>
+            <!-- Quiz Section -->
+            <div class="quiz-container">
+                <div id="questions-box" class="hide">
+                    <div id="questions-amount">Question <span id="current-index">1</span>
+                    </div>
+                    <!--Questions and answers buttons-->
+                    <div id="question-text">Question shown here</div>
+                    <div id="timer">Timer: <span id="timer-display">30</span> seconds</div>
+                    <div id="answer-buttons-container" class="answer-buttons-container">
+                        <button class="btn">Answer 1</button>
+                        <button class="btn">Answer 2</button>
+                        <button class="btn">Answer 3</button>
+                        <button class="btn">Answer 4</button>
+                    </div>
+                </div>
+                <!-- Introduction Section -->
+                <div>
+                    <div class="home-page" id="home-page">
+                        <h2>Welcome to Think & Test Quiz</h2>
+                        <p>Prepare yourself for a challenge with 10 unpredictable questions heading your way.</p>
+                        <p>For each question, you'll be presented with 4 answer choices, but choose wisely as your
+                            selection is final once clicked</p>
+                        <p>Should you desire to begin anew, simply tap on the Quiz emblem.</p>
+                        <p>Keep in mind, your questions upon restarting may differ.</p>
+                        <p>Best of luck!</p>
+                        <label for="user-name"></label>
+                        <input type="text" id="username" placeholder="Enter your name" required>
+                    </div>
+                    <!-- Buttons Section -->
+                    <div class="buttons">
+                        <button id="start-game-btn" class="start-game-btn btn">Start Quiz</button>
+                        <button id="next-question-btn" class="next-question-btn btn hide">Next Question</button>
+                        <button id="show-results-btn" class="show-results-btn btn hide">See Test Results</button>
+                    </div>
+                </div>
+                <!-- Results Section -->
+                <div id="results-container" class="results-container hide">
+                    <div class="scores" id="scores">
+                        <p>"Perfect! <span id="name"></span>", you have completed the quiz.</p>
+                        <br>
+                        <p>
+                            "Correct answers"
+                            <span id="score">0</span>
+                            "out of 10."
+                        </p>
+                        <br>
+                        <p id="written-scores"></p>
+                    </div>
+                    <button id="restart-game-btn" class="restart-game-btn button hide">Restart Quiz</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
