@@ -29,3 +29,52 @@
     height: 70px;
     padding: 0;
   }
+
+  .hide {
+    display: none;
+  }
+  
+  main {
+    margin-top: 64px;
+    flex: 1 0 auto;
+    min-height: 100vh;
+    background: url(../images/background.jpg) no-repeat center center / cover;
+    position: relative;
+    width: 100%;
+  }
+  
+  .quiz-container {
+    display: block;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 30px;
+  }
+  
+  #home-page {
+    padding: 6px;
+    text-align: center;
+    margin-top: 25px;
+    color: #334e57;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  p {
+    background: rgba(200, 222, 247, 0.7);
+    border: 1px solid #334e57;
+    border-radius: 4px;
+    justify-content: center;
+    margin: 9px 0;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  
+  #username {
+    border: 1px solid #334e57;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
