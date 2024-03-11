@@ -54,3 +54,31 @@ function startTimer(duration, display, timeoutCallback) {
     }, 1000); // Update the timer every 1 second
 }
 
+function setNextQuestion() {
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    clearInterval(timerInterval); // Reset the timer
+    if (currentQuestionIndex === 9) { // Check if it's the last question
+        startTimer(30, document.getElementById("timer-display"), function() {
+            hideQuestion(); // Hide the question and answer buttons when time expires on the last question
+            resultsBtn.classList.remove("hide"); // Show the results button if time expires on the last question
+        });
+    } else {
+        startTimer(30, document.getElementById("timer-display"), moveToNextQuestion); // Start a new timer for each question (30 seconds)
+        resultsBtn.classList.add("hide"); // Hide the results button in other cases
+    }
+}
+
+function hideQuestion() {
+    questionContainer.classList.add("hide");
+}
+
+function moveToNextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < 10) {
+        setNextQuestion();
+    } else {
+        resultsBtn.classList.remove("hide");
+    }
+}
+
