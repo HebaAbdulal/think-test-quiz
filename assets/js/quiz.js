@@ -82,3 +82,24 @@ function moveToNextQuestion() {
     }
 }
 
+function showQuestion(question) {
+    const currentQuestionNumber = document.getElementById("current-index");
+    currentQuestionNumber.classList.remove("hide");
+    currentQuestionNumber.innerText = currentQuestionIndex + 1;
+
+    questionText.innerText = question.question;
+    question.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerText = answer;
+        button.classList.add("btn");
+        button.addEventListener("click", selectAnswer);
+        answerBtnsContainer.appendChild(button);
+    });
+}
+
+function resetState() {
+    nextBtn.classList.add("hide");
+    while (answerBtnsContainer.firstChild) {
+        answerBtnsContainer.removeChild(answerBtnsContainer.firstChild);
+    }
+}
