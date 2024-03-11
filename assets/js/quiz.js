@@ -1,8 +1,8 @@
 const startBtn = document.getElementById("start-game-btn");
 const nextBtn = document.getElementById("next-question-btn");
 
-
-
+const questionContainer = document.getElementById("questions-box");
+const questionText = document.getElementById("question-text");
 
 
 
@@ -39,3 +39,18 @@ function startGame() {
     questionContainer.classList.remove("hide");
     setNextQuestion();
 }
+
+function startTimer(duration, display, timeoutCallback) {
+    let timer = duration;
+    timerInterval = setInterval(function () {
+        display.textContent = timer;
+        if (--timer < 0) {
+            clearInterval(timerInterval);
+            display.textContent = "Time's up!";
+            if (timeoutCallback) {
+                timeoutCallback();
+            }
+        }
+    }, 1000); // Update the timer every 1 second
+}
+
