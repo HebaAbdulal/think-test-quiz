@@ -88,7 +88,9 @@ function showQuestion(question) {
     currentQuestionNumber.innerText = currentQuestionIndex + 1;
 
     questionText.innerText = question.question;
-    question.answers.forEach(answer => {
+    const shuffledAnswers = question.answers.sort(() => Math.random() - 0.5);
+
+    shuffledAnswers.forEach(answer => {
         const button = document.createElement("button");
         button.innerText = answer;
         button.classList.add("btn");
@@ -174,5 +176,3 @@ restartBtn.addEventListener("click", () => {
     score = 0;
     startGame();
 });
-
-
