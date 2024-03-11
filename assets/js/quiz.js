@@ -101,6 +101,7 @@ function showQuestion(question) {
 
 function resetState() {
     nextBtn.classList.add("hide");
+    resultsBtn.classList.add("hide");
     while (answerBtnsContainer.firstChild) {
         answerBtnsContainer.removeChild(answerBtnsContainer.firstChild);
     }
