@@ -1,6 +1,6 @@
 const startBtn = document.getElementById("start-game-btn");
 const nextBtn = document.getElementById("next-question-btn");
-
+const resultsBtn = document.getElementById("show-results-btn");
 const questionContainer = document.getElementById("questions-box");
 const questionText = document.getElementById("question-text");
 
@@ -101,5 +101,28 @@ function resetState() {
     nextBtn.classList.add("hide");
     while (answerBtnsContainer.firstChild) {
         answerBtnsContainer.removeChild(answerBtnsContainer.firstChild);
+    }
+}
+
+function selectAnswer(e) {
+    const selectedButton = e.target;
+    const correct = selectedButton.innerText === questions[currentQuestionIndex].correct_answer;
+    setStatusClass(selectedButton, correct);
+    if (correct) {
+        score++;
+    } else {
+        // Find the correct answer button and change its color to green
+        const correctAnswerButton = Array.from(answerBtnsContainer.children).find(button => button.innerText === questions[currentQuestionIndex].correct_answer);
+        setStatusClass(correctAnswerButton, true);
+    }
+    // Remove event listeners from all answer buttons to prevent further clicking
+    Array.from(answerBtnsContainer.children).forEach(button => {
+        button.removeEventListener("click", selectAnswer);
+    });
+    if (currentQuestionIndex < 9) {
+        nextBtn.classList.remove("hide");
+        resultsBtn.classList.add("hide");
+    } else {
+        resultsBtn.classList.remove("hide");
     }
 }
