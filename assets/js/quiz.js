@@ -3,7 +3,9 @@ const nextBtn = document.getElementById("next-question-btn");
 const resultsBtn = document.getElementById("show-results-btn");
 const questionContainer = document.getElementById("questions-box");
 const questionText = document.getElementById("question-text");
-
+const answerBtnsContainer = document.getElementById("answer-buttons-container");
+const resultsContainer = document.getElementById("results-container");
+const restartBtn = document.getElementById("restart-game-btn");
 
 
 const homePage = document.getElementById("home-page");
@@ -168,3 +170,9 @@ function showResult() {
         scoreText.innerText = `Your performance merits a TROLL grade.`;
     }
 }
+
+restartBtn.addEventListener("click", () => {
+    resultsContainer.classList.add("hide");
+    score = 0;
+    startGame();
+});
