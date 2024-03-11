@@ -147,3 +147,24 @@ resultsBtn.addEventListener("click", () => {
     resultsContainer.classList.remove("hide");
     showResult();
 });
+
+function showResult() {
+    document.getElementById("score").textContent = score;
+    let scoreText = document.getElementById("written-scores");
+    restartBtn.classList.remove("hide");
+    let player = userNameInput.value;
+    document.getElementById("name").innerText = `${player}`;
+    if (score > 8) {
+        scoreText.innerText = `Your performance merits an OUTSTANDING grade.`;
+    } else if (score > 6) {
+        scoreText.innerText = `Your performance merits an EXCEEDS EXPECTATIONS grade.`; 
+    } else if (score > 4) {
+        scoreText.innerText = `Your performance merits an ACCEPTABLE grade.`;
+    } else if (score > 2) {
+        scoreText.innerText = `Your performance merits a POOR grade.`;
+    } else if (score > 0) {
+        scoreText.innerText = `Your performance merits a DREADFUL grade.`;
+    } else {
+        scoreText.innerText = `Your performance merits a TROLL grade.`;
+    }
+}
