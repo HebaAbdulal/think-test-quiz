@@ -6,8 +6,6 @@ const questionText = document.getElementById("question-text");
 const answerBtnsContainer = document.getElementById("answer-buttons-container");
 const resultsContainer = document.getElementById("results-container");
 const restartBtn = document.getElementById("restart-game-btn");
-
-
 const homePage = document.getElementById("home-page");
 const userNameInput = document.getElementById("username");
 let score = 0;
@@ -176,3 +174,5 @@ restartBtn.addEventListener("click", () => {
     score = 0;
     startGame();
 });
+
+
