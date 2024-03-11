@@ -126,3 +126,24 @@ function selectAnswer(e) {
         resultsBtn.classList.remove("hide");
     }
 }
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add("correct");
+    } else {
+        element.classList.add("wrong");
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove("correct");
+    element.classList.remove("wrong");
+}
+
+resultsBtn.addEventListener("click", () => {
+    resultsBtn.classList.add("hide");
+    questionContainer.classList.add("hide");
+    resultsContainer.classList.remove("hide");
+    showResult();
+});
