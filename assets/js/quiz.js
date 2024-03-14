@@ -24,7 +24,7 @@ startBtn.addEventListener("click", () => {
 
 nextBtn.addEventListener("click", () => {
     currentQuestionIndex++;
-    if (currentQuestionIndex < 10) {
+    if (currentQuestionIndex < 15) {
         setNextQuestion();
     } else {
         resultsBtn.classList.remove("hide");
@@ -58,14 +58,14 @@ function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
     clearInterval(timerInterval); // Reset the timer
-    if (currentQuestionIndex === 9) { // Check if it's the last question
+    if (currentQuestionIndex === 14) { // Check if it's the last question
         startTimer(30, document.getElementById("timer-display"), function() {
-            hideQuestion(); // Hide the question and answer buttons when time expires on the last question
-            resultsBtn.classList.remove("hide"); // Show the results button if time expires on the last question
+            hideQuestion(); 
+            resultsBtn.classList.remove("hide"); 
         });
     } else {
-        startTimer(30, document.getElementById("timer-display"), moveToNextQuestion); // Start a new timer for each question (30 seconds)
-        resultsBtn.classList.add("hide"); // Hide the results button in other cases
+        startTimer(30, document.getElementById("timer-display"), moveToNextQuestion); 
+        resultsBtn.classList.add("hide"); 
     }
 }
 
@@ -75,7 +75,7 @@ function hideQuestion() {
 
 function moveToNextQuestion() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < 10) {
+    if (currentQuestionIndex < 20) {
         setNextQuestion();
     } else {
         resultsBtn.classList.remove("hide");
@@ -122,7 +122,7 @@ function selectAnswer(e) {
     Array.from(answerBtnsContainer.children).forEach(button => {
         button.removeEventListener("click", selectAnswer);
     });
-    if (currentQuestionIndex < 9) {
+    if (currentQuestionIndex < 14) {
         nextBtn.classList.remove("hide");
         resultsBtn.classList.add("hide");
     } else {
@@ -153,23 +153,9 @@ resultsBtn.addEventListener("click", () => {
 
 function showResult() {
     document.getElementById("score").textContent = score;
-    let scoreText = document.getElementById("written-scores");
     restartBtn.classList.remove("hide");
     let player = userNameInput.value;
     document.getElementById("name").innerText = `${player}`;
-    if (score > 8) {
-        scoreText.innerText = `Your performance merits an OUTSTANDING grade.`;
-    } else if (score > 6) {
-        scoreText.innerText = `Your performance merits an EXCEEDS EXPECTATIONS grade.`; 
-    } else if (score > 4) {
-        scoreText.innerText = `Your performance merits an ACCEPTABLE grade.`;
-    } else if (score > 2) {
-        scoreText.innerText = `Your performance merits a POOR grade.`;
-    } else if (score > 0) {
-        scoreText.innerText = `Your performance merits a DREADFUL grade.`;
-    } else {
-        scoreText.innerText = `Your performance merits a TROLL grade.`;
-    }
 }
 
 restartBtn.addEventListener("click", () => {

@@ -1,39 +1,140 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Think & Test Quiz
 
-Welcome,
+Welcome to the Think & Test Quiz! This interactive quiz assesses your knowledge with 15 questions in 30 seconds. Your grade depends on how many answers you get right. With a pool of over 30 questions, users can enjoy a fresh experience every time they take the quiz.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Website responsiveness picture](assets/images/responsive.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Contents
 
-## Codeanywhere Reminders
+### User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- __Initial Discussion__
+- __User Stories__
 
-`python3 -m http.server`
+### Structure
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- __Home Page Section__
+- __Questions Page Section__
+- __Scores Section__
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+### Design
 
-`http_server`
+- __Colour Scheme__
+- __Typography__
+- __Images__
+- __Wireframes__
+- __Features__
+- __Accessibility__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Technologies Used
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- __Languages Used__
+- __Frameworks, Libraries and Programs used__
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Deployment
+- __Deployment__
 
-To log into the Heroku toolbelt CLI:
+### Testing
+- __W3C Validator__
+- __Navigation Links__
+- __Responsive Design__
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Credits
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Code Used__
+- __Media__
+- __Content__
+- __Acknowledgments__
 
----
+## User Experience (UX)
 
-Happy coding!
+- __Initial Discussion__
+Think & Test Quiz is an engaging quiz focusing on HTML and CSS knowledge. It features 15 randomly selected questions from a pool of over 30, ensuring players always have a fresh experience.
+#### Important Details About the Website
+- entertain players with the quiz
+- provide correct answers for learning
+- foster internal competition
+- ensure compatibility across all devices
+- this project was created using HTML, CSS, and JavaScript
+
+- __User Stories__
+    #### Goals for First-Time Users:
+    - I want to know what the website is for and how to use it.
+    - I want the game to be easy to play.
+    - I want to see the right answers.
+    - I want to know my score.
+    - I want to move around the website easily.
+    - I want to have fun.
+    #### Goals for Returning Users:
+    - I'd like to have a variety of questions each time I play, with no repeats.
+    - I want to enjoy playing the game again and again.
+    #### Goal for All Users:
+    - Every user desires the website to be easily accessible and user-friendly on various devices.
+
+## Structure
+
+<br>
+The quiz platform comprises an instructions page, 15 questions, and a results page. Users can opt to retake the quiz from the results page, which redirects them to the 15 questions. Additionally, users can restart the quiz at any time by clicking on Quiz logo in the top left corner.
+
+<br>
+
+- __Home Page__
+    - Provides insight into the game's nature.
+    - Guides users on how to play.
+    - Encourages users to begin.
+<br>
+
+User Goals:
+- Understand the website's primary purpose.
+- Grasp the gameplay mechanics.
+- Initiate the game.
+- Experience amusement.
+
+<br>
+
+Website Goals:
+- Captivate and engage users.
+- Clarify gameplay mechanics.
+- Facilitate game initiation.
+
+- __Questions Page Section__
+    - Presents questions with four answer options within a 30-second timeframe to encourage prompt responses.
+    - Displays the next question button upon answer selection.
+    - Indicates correct/incorrect answers.
+    - Tracks question count out of fourty.
+
+<br>
+
+User Goals:
+- Engage in the quiz.
+- Identify the correct answer, even when selecting the wrong one, with adequate viewing time.
+
+<br>
+
+Website Goals:
+- Entertain users through the quiz.
+- Enable seamless navigation to the subsequent question.
+- Implement a timer for each question to add excitement and urgency.
+- Provide a question counter.
+- Present correct answers.
+
+- __Score Section__
+- Exhibits the user's score out of 15.
+- Offers the option to replay.
+
+<br>
+
+User Goals:
+- Discover the number of correct answers.
+- Experience amusement.
+- Have the chance to replay.
+
+<br>
+
+Website Goals:
+- Inform users of their correct answer count.
+- Facilitate quiz replayability.
+
+
+
+
