@@ -5,13 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initia-scale=1.0">
     <title>Think & Test Quiz</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!--Header Section-->
     <header>
-        <a href="index.html" title="Home Page (back to homepage)" aria-label="Go to Home Page">
+        <a href="index.html" title="Back to Home Page" aria-label="Go to Home Page">
             <img id="logo" src="assets/images/logo.png" alt="Think and Test logo">
         </a>
     </header>
@@ -36,13 +50,13 @@
                 <div>
                     <div class="home-page" id="home-page">
                         <h2>Welcome to Think & Test Quiz</h2>
-                        <p>Prepare yourself for a challenge with 10 unpredictable questions heading your way.</p>
+                        <p>Prepare yourself for a challenge with 15 unpredictable questions heading your way.</p>
+                        <p>Each question comes with a 30-second timer, adding to the excitement.</p>
                         <p>For each question, you'll be presented with 4 answer choices, but choose wisely as your
                             selection is final once clicked</p>
                         <p>Should you desire to begin anew, simply tap on the Quiz emblem.</p>
                         <p>Keep in mind, your questions upon restarting may differ.</p>
                         <p>Best of luck!</p>
-                        <label for="user-name"></label>
                         <input type="text" id="username" placeholder="Enter your name" required>
                     </div>
                     <!-- Buttons Section -->
@@ -61,7 +75,7 @@
                         <p>
                             "Correct answers"
                             <span id="score">0</span>
-                            "out of 10."
+                            "out of 15."
                         </p>
                     </div>
                     <button id="restart-game-btn" class="restart-game-btn button hide">Restart Quiz</button>

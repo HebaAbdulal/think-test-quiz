@@ -38,6 +38,11 @@ function startGame() {
     currentQuestionIndex = 0;
     questionContainer.classList.remove("hide");
     setNextQuestion();
+    const answerButtons = document.querySelectorAll("#answer-buttons-container .btn");
+    answerButtons.forEach(button => {
+        button.classList.add("font");
+    });
+    
 }
 
 function startTimer(duration, display, timeoutCallback) {
@@ -93,7 +98,7 @@ function showQuestion(question) {
     shuffledAnswers.forEach(answer => {
         const button = document.createElement("button");
         button.innerText = answer;
-        button.classList.add("btn");
+        button.classList.add("btn", "font");
         button.addEventListener("click", selectAnswer);
         answerBtnsContainer.appendChild(button);
     });
@@ -145,21 +150,23 @@ function clearStatusClass(element) {
 }
 
 resultsBtn.addEventListener("click", () => {
-    resultsBtn.classList.add("hide");
     questionContainer.classList.add("hide");
     resultsContainer.classList.remove("hide");
+    resultsBtn.classList.add("hide");
     showResult();
 });
 
 function showResult() {
     document.getElementById("score").textContent = score;
     restartBtn.classList.remove("hide");
+    resultsBtn.classList.add("hide");
     let player = userNameInput.value;
     document.getElementById("name").innerText = `${player}`;
 }
 
 restartBtn.addEventListener("click", () => {
     resultsContainer.classList.add("hide");
+    resultsBtn.classList.add("hide");
     score = 0;
     startGame();
 });

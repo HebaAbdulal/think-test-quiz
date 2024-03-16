@@ -135,6 +135,127 @@ Website Goals:
 - Inform users of their correct answer count.
 - Facilitate quiz replayability.
 
+## Design
+### Color Palette
+The color scheme was generated using the Contrast Grid website.
+
+![Colour contrast picture](assets/images/colour-contrast.png)
+
+### Typography
+
+#### The fonts for this website were sourced from Google Fonts and Adop Fonts:
+- "Truculenta", sans-serif was chosen for all questions and answers.
+- Arial, sans-serif was selected for all headings and other paragraphs.
+
+### Images
+
+The background image and logo used in this quiz were sourced from www.pexels.com, ensuring they are free from any copyright issues.
+
+### Wireframes
+
+Wireframes were created for desktop.
+
+![Wireframes picture](assets/images/wireframe1.png)
+
+<br>
+
+![startgame wirefram](assets/images/wireframe2.png)
+
+<br>
+
+![result wireframe](assets/images/wireframe3.png)
+
+<br>
+
+![restart game wirefram](assets/images/wireframe4.png)
+
+### Features
+
+- __Home Page__
+    - The logo serves as a consistent link to the home page across all website pages, ensuring easy navigation.
+    - By clicking on the logo, users can return to the home page at any point during the game.
+    - Hovering over the logo displays a title, reinforcing its function as a link.
+
+- __Instructions area__
+    - The instructions section is prominently displayed, capturing the user's attention from the outset.
+    - It features a text input box for users to enter their name, which will be utilized for the results.
+    - Clear explanations are provided regarding the nature of the quiz, including the number of questions, how to answer them, and the inability to change responses after submission.
+    - Instructions also outline the process for restarting the quiz, with a reminder that questions may vary.
+    - Each question is timed for 30 seconds, adding an element of urgency.
+    - The start button is prominently positioned and visually emphasized, facilitating the initiation of the quiz.
+
+<br>
+
+- __Questions section__
+    - Within this area, users encounter the 15 questions, clearly indicating their progress.
+    - Each question is prominently displayed, ensuring easy readability.
+    - Four options are presented for each question, allowing users to make their selection.
+    - A timer is prominently featured above the answer choices, adding a sense of urgency.
+    - The spacing between buttons is optimized to minimize the risk of accidental clicks.
+    - The layout is responsive, adjusting to larger devices by organizing buttons into a convenient 2 x 2 grid.
+
+    ![Questions picture](assets/images/questions.png)
+
+    <br>
+
+    - __Correct and Incorrect answers__
+        - After selecting an answer, buttons dynamically change color to indicate correctness.
+        - The next button becomes visible for progression.
+        - A timer prompts players to make a swift decision, enhancing engagement.
+
+        ![Correctness picture](assets/images/correct-answer.png)
+
+    <br>
+
+    - __Results section__
+        - Extracts user's name from the input field in the instructions.
+        - Personalizes the results page by displaying the user's name.
+        - Provides the user's score out of 15.
+        - Offers an option to restart the quiz for further enjoyment.
+        ![Results picture](assets/images/result.png)
+
+        <br>
+
+        ### Accessibility
+        - Implemented active tags to indicate the current open page for screen reader users.
+        - Incorporated ARIA labels on all images throughout the website to provide descriptive information to screen reader users.
+        - Enhanced user engagement and reduced errors by implementing button highlighting in beige when hovered over.
+        - Incorporated a feature where, upon selecting an answer, the correct answer is revealed, followed by the display of a button for proceeding to the next question. This prevents users from accidentally skipping questions and enables them to review both correct and incorrect answers.
+
+    <br>
+    
+    ### Technologies Used
+
+    - Languages: HTML, CSS, JavaScript.
+    - Git - For version control.
+    - GitHub - To save and store the files for the website.
+    - Gitpod - IDE to develop the website.
+    - Google Fonts - To import the fonts used on the wesbite.
+    - Google Chrome Dev Tools- For addressing technical issues, debugging, inspecting elements on the page, and ensuring responsiveness, as well as resolving any associated styling problems.
+    - Favicon.io - to create the website favicon.
+    - Google Chrome's Lighthouse - to access preformance and accesibility.
+    - W3C HTML Markup Validator to validate HTML code.
+    - W3C Jigsaw CSS Validator to validate CSS code.
+    
+    <br>
+
+    ### Deployment
+
+    - __The website has been deployed to GitHub Pages. Follow these steps to deploy it:__
+        - Go to the Settings tab in the GitHub repository.
+        - In the Source section drop-down menu, choose the Master Branch.
+        - Once you've selected the master branch, the page will automatically refresh, showing a detailed ribbon display to confirm the successful deployment.
+        - You can access the live link here
+        https://hebaabdulal.github.io/think-test-quiz/index.html
+
+        <br>
+
+        
+
+
+
+
+
 
 
 
