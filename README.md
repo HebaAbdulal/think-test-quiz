@@ -57,14 +57,14 @@ Think & Test Quiz is an engaging quiz focusing on HTML and CSS knowledge. It fea
 - ensure compatibility across all devices
 - this project was created using HTML, CSS, and JavaScript
 
-- __User Stories__
-    #### Goals for First-Time Users:
-    - I want to know what the website is for and how to use it.
-    - I want the game to be easy to play.
-    - I want to see the right answers.
-    - I want to know my score.
-    - I want to move around the website easily.
-    - I want to have fun.
+#### User Stories
+Goals for First-Time Users:
+- I want to know what the website is for and how to use it.
+- I want the game to be easy to play.
+- I want to see the right answers.
+- I want to know my score.
+- I want to move around the website easily.
+- I want to have fun.
     #### Goals for Returning Users:
     - I'd like to have a variety of questions each time I play, with no repeats.
     - I want to enjoy playing the game again and again.
@@ -221,10 +221,11 @@ Wireframes were created for desktop.
         - Incorporated ARIA labels on all images throughout the website to provide descriptive information to screen reader users.
         - Enhanced user engagement and reduced errors by implementing button highlighting in beige when hovered over.
         - Incorporated a feature where, upon selecting an answer, the correct answer is revealed, followed by the display of a button for proceeding to the next question. This prevents users from accidentally skipping questions and enables them to review both correct and incorrect answers.
+        ![Accessibility picture](assets/images/accessability1.png)
 
     <br>
     
-    ### Technologies Used
+    ## Technologies Used
 
     - Languages: HTML, CSS, JavaScript.
     - Git - For version control.
@@ -239,7 +240,7 @@ Wireframes were created for desktop.
     
     <br>
 
-    ### Deployment
+    ## Deployment
 
     - __The website has been deployed to GitHub Pages. Follow these steps to deploy it:__
         - Go to the Settings tab in the GitHub repository.
@@ -250,7 +251,64 @@ Wireframes were created for desktop.
 
         <br>
 
-        
+    ## Testing
+
+    - __User Stories__
+
+| Feature                   | First-time Users                                 | Frequently Users                                 | All Users                                 | Result  |
+|---------------------------|--------------------------------------------------|--------------------------------------------------|------------------------------------------|---------|
+| Logo Link                 | As a first-time user, I expect the logo to be clickable, directing me to the home page.        | As a frequent user, I rely on the logo link for quick navigation to the home page.                   | All users expect the logo to serve as a consistent navigation element throughout the website. | Passed    |
+| Quiz Instructions         | I expect clear instructions on how to play the quiz, including how many questions there are and how to start. | As a frequent user, I may skip the instructions, but I expect them to be easily accessible.             | All users need instructions to understand how to interact with the quiz.                      | Passed    |
+| Question Display          | I expect the questions to be displayed clearly and prominently on the screen.                         | As a frequent user, I expect the questions to be presented consistently and legibly.                    | All users rely on the clear display of questions to participate in the quiz.                  | Passed    |
+| Answer Selection          | I expect to be able to select answers easily and intuitively.                                         | As a frequent user, I expect the answer buttons to be responsive and accurately register my selection. | All users need an intuitive interface for selecting answers during the quiz.                 | Passed    |
+| Timer Display             | I expect to see a timer indicating the time remaining for each question.                                | As a frequent user, I rely on the timer to pace my answers during the quiz.                          | All users need a timer to track their progress and performance in the quiz.                  | Passed   |
+| Results Presentation      | After completing the quiz, I expect to see my score and performance summary.                             | As a frequent user, I expect the results page to provide detailed feedback on my performance.          | All users need clear and informative feedback on their quiz results.                         | Passed    |
+| Navigation and Restart    | I expect clear navigation options to restart the quiz or navigate between questions.                    | As a frequent user, I rely on smooth navigation to move through the quiz efficiently.                 | All users need intuitive navigation options to navigate the quiz.                           | Passed    |
+
+
+<br>
+
+- __Manual Testing__
+
+| Functionality                                          | Test Description                                                                                     | Test Result  |
+|--------------------------------------------------------|-----------------------------------------------------------------------------------------------------|--------------|
+| Answer Feedback Coloring                               | Selected each answer to check if color changes to green for correct and red for incorrect answers. | Passed       |
+| Timer Functionality                                    | Waited without selecting any answer to see if timer proceeds to the next question or shows results. | Passed       |
+| Random Question Display                                | Verified if questions are displayed randomly.                                                       | Passed       |
+| Alert Message for Missing or Invalid User Name        | Attempted to submit without providing a name or providing only spaces to check for alert message.   | Passed       |
+| Result Button Functionality for Score Display         | Clicked on the result button to ensure that scores are shown after completing the quiz.             | Passed       |
+
+<br>
+
+- __Html validation__
+
+![HTML validation picture](assets/images/html-validator.png)
+
+<br>
+
+- __CSS validator__
+
+![CSS validation picture](assets/images/css-validator2.png)
+
+<br>
+
+## Credits
+- Html
+- CSS
+- Javascript
+
+### Media
+
+- The website incorporated image and logo sourced from www.pexels.com, was utilized during development. The Google Chrome browser was used for testing and previewing.
+
+### Content
+
+- Content for the website is written by the owner Heba Abdulal.
+
+### Acknowledgments
+
+I would like to thank Matt Bodden, my mentor from Code Institute, for his guidance and support during the development of my second milestone project.
+
 
 
 

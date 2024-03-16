@@ -12,6 +12,8 @@ let score = 0;
 
 let shuffledQuestions, currentQuestionIndex;
 
+import questions from "questions.js";
+
 let timerInterval;
 
 startBtn.addEventListener("click", () => {
@@ -34,7 +36,7 @@ nextBtn.addEventListener("click", () => {
 function startGame() {
     homePage.classList.add("hide");
     startBtn.classList.add("hide");
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     questionContainer.classList.remove("hide");
     setNextQuestion();
@@ -160,6 +162,7 @@ function showResult() {
     document.getElementById("score").textContent = score;
     restartBtn.classList.remove("hide");
     resultsBtn.classList.add("hide");
+    clearInterval(timerInterval);
     let player = userNameInput.value;
     document.getElementById("name").innerText = `${player}`;
 }

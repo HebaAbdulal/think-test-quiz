@@ -1,5 +1,5 @@
 /* Questions and Answers section. */
-const questions = [
+export const questions = [
     {
         category: "HTML",
         question: "Why do we use the <br> element?",
