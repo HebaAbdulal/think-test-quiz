@@ -292,6 +292,10 @@ Wireframes were created for desktop.
 
 <br>
 
+![Javascript validation picture](assets/images/js-validation.png)
+
+<br>
+
 ## Credits
 - Html
 - CSS
