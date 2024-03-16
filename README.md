@@ -66,15 +66,16 @@ Goals for First-Time Users:
 - I want to know my score.
 - I want to move around the website easily.
 - I want to have fun.
-    #### Goals for Returning Users:
-    - I'd like to have a variety of questions each time I play, with no repeats.
-    - I want to enjoy playing the game again and again.
-    #### Goal for All Users:
-    - Every user desires the website to be easily accessible and user-friendly on various devices.
+Goals for Returning Users:
+- I'd like to have a variety of questions each time I play, with no repeats.
+- I want to enjoy playing the game again and again.
+Goal for All Users:
+- Every user desires the website to be easily accessible and user-friendly on various devices.
 
 ## Structure
 
 <br>
+
 The quiz platform comprises an instructions page, 15 questions, and a results page. Users can opt to retake the quiz from the results page, which redirects them to the 15 questions. Additionally, users can restart the quiz at any time by clicking on Quiz logo in the top left corner.
 
 <br>
