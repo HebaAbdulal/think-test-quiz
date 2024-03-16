@@ -123,14 +123,14 @@ export const questions = [
     },
     {
         category: "HTML",
-        question: "What is the correct HTML for adding a background color?",
+        question: "What does the <meta> tag do in HTML?",
         answers: [
-            '<body style="background-color: yellow;">',
-            '<background color="yellow;">',
-            '<body bg="yellow;">',
-            '<bgcolor="yellow;">'
+            "Defines metadata about an HTML document",
+            "Defines a hyperlink",
+            "Creates a line break",
+            "Defines a paragraph"
         ],
-        correct_answer: '<body style="background-color: yellow;">'
+        correct_answer: "Defines metadata about an HTML document"
     },
     {
         category: "CSS",
@@ -299,14 +299,14 @@ export const questions = [
     },
     {
         category: "HTML",
-        question: "What is the correct HTML for creating a checkbox?",
+        question: "Which HTML tag is used for creating a list item?",
         answers: [
-            '<input type="checkbox">',
-            '<check>',
-            '<input type="check">',
-            '<box>'
+            "<li>",
+            "<ul>",
+            "<ol>",
+            "<list>"
         ],
-        correct_answer: '<input type="checkbox">'
+        correct_answer: "<li>"
     },
     {
         category: "HTML",
