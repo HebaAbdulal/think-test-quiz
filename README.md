@@ -49,6 +49,7 @@ Welcome to the Think & Test Quiz! This interactive quiz assesses your knowledge 
 ## User Experience (UX)
 
 - __Initial Discussion__
+
 Think & Test Quiz is an engaging quiz focusing on HTML and CSS knowledge. It features 15 randomly selected questions from a pool of over 30, ensuring players always have a fresh experience.
 #### Important Details About the Website
 - entertain players with the quiz
