@@ -86,18 +86,18 @@ The quiz platform comprises an instructions page, 15 questions, and a results pa
     - Encourages users to begin.
 <br>
 
-User Goals:
-- Understand the website's primary purpose.
-- Grasp the gameplay mechanics.
-- Initiate the game.
-- Experience amusement.
+- __User Goals:__
+    - Understand the website's primary purpose.
+    - Grasp the gameplay mechanics.
+    - Initiate the game.
+    - Experience amusement.
 
 <br>
 
-Website Goals:
-- Captivate and engage users.
-- Clarify gameplay mechanics.
-- Facilitate game initiation.
+- __Website Goals:__
+    - Captivate and engage users.
+    - Clarify gameplay mechanics.
+    - Facilitate game initiation.
 
 - __Questions Page Section__
     - Presents questions with four answer options within a 30-second timeframe to encourage prompt responses.
@@ -107,35 +107,35 @@ Website Goals:
 
 <br>
 
-User Goals:
-- Engage in the quiz.
-- Identify the correct answer, even when selecting the wrong one, with adequate viewing time.
+- __User Goals:__
+    - Engage in the quiz.
+    - Identify the correct answer, even when selecting the wrong one, with adequate viewing time.
 
 <br>
 
-Website Goals:
-- Entertain users through the quiz.
-- Enable seamless navigation to the subsequent question.
-- Implement a timer for each question to add excitement and urgency.
-- Provide a question counter.
-- Present correct answers.
+- __Website Goals:__
+    - Entertain users through the quiz.
+    - Enable seamless navigation to the subsequent question.
+    - Implement a timer for each question to add excitement and urgency.
+    - Provide a question counter.
+    - Present correct answers.
 
 - __Score Section__
-- Exhibits the user's score out of 15.
-- Offers the option to replay.
+    - Exhibits the user's score out of 15.
+    - Offers the option to replay.
 
 <br>
 
-User Goals:
-- Discover the number of correct answers.
-- Experience amusement.
-- Have the chance to replay.
+- __User Goals:__
+    - Discover the number of correct answers.
+    - Experience amusement.
+    - Have the chance to replay.
 
 <br>
 
-Website Goals:
-- Inform users of their correct answer count.
-- Facilitate quiz replayability.
+- __Website Goals:__
+    - Inform users of their correct answer count.
+    - Facilitate quiz replayability.
 
 ## Design
 ### Color Palette
