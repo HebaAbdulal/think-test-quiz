@@ -143,6 +143,10 @@ The color scheme was generated using the Contrast Grid website.
 
 ![Colour contrast picture](assets/images/colour-contrast.png)
 
+<br>
+
+![Colour contrast picture](assets/images/contrast-color.png)
+
 ### Typography
 
 #### The fonts for this website were sourced from Google Fonts and Adop Fonts:
