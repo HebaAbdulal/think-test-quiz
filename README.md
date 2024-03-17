@@ -218,6 +218,8 @@ Wireframes were created for desktop.
         - Personalizes the results page by displaying the user's name.
         - Provides the user's score out of 15.
         - Offers an option to restart the quiz for further enjoyment.
+        <br>
+
         ![Results picture](assets/images/result.png)
 
         <br>
@@ -227,6 +229,9 @@ Wireframes were created for desktop.
         - Incorporated ARIA labels on all images throughout the website to provide descriptive information to screen reader users.
         - Enhanced user engagement and reduced errors by implementing button highlighting in beige when hovered over.
         - Incorporated a feature where, upon selecting an answer, the correct answer is revealed, followed by the display of a button for proceeding to the next question. This prevents users from accidentally skipping questions and enables them to review both correct and incorrect answers.
+
+        <br>
+
         ![Accessibility picture](assets/images/accessability1.png)
 
     <br>
@@ -243,6 +248,8 @@ Wireframes were created for desktop.
     - Google Chrome's Lighthouse - to access preformance and accesibility.
     - W3C HTML Markup Validator to validate HTML code.
     - W3C Jigsaw CSS Validator to validate CSS code.
+    - Jshint.com to validate javascript.
+    - Wave to check colour contrast.
     
     <br>
 
@@ -301,6 +308,12 @@ Wireframes were created for desktop.
 ![Javascript validation picture](assets/images/js-validation.png)
 
 <br>
+
+- __Solved Issue__
+
+<br>
+
+An issue was encountered with the timer feature during the implementation of the quiz. It was observed that the timer continued running even after the quiz was completed and the results were displayed. To ensure a smooth user experience, the problem was addressed by adding functionality to stop the timer when displaying the quiz results. This enhancement ensures that the timer accurately reflects the time taken to answer questions without causing confusion for the players.
 
 ## Credits
 - Html
