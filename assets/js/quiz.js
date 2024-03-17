@@ -12,9 +12,10 @@ let score = 0;
 
 let shuffledQuestions, currentQuestionIndex;
 
-import questions from "questions.js";
-
 let timerInterval;
+
+
+import { questions } from './questions.js';
 
 startBtn.addEventListener("click", () => {
     if (userNameInput.value.trim() === "") {
