@@ -18,10 +18,11 @@ let timerInterval;
 import { questions } from './questions.js';
 
 startBtn.addEventListener("click", () => {
-    if (userNameInput.value.trim() === "") {
-        alert("Please enter your name");
-    } else {
-        startGame();
+    let regex = /^[a-zA-Z]+$/;
+    if (userNameInput.value.trim() === "" || userNameInput.value.length > 20 || !regex.test(userNameInput.value)) {
+        alert("Please enter your name, less than 20 letters, no numbers, spaces or special characters.")
+    } if (userNameInput.value.length <= 20 && regex.test(userNameInput.value)) {
+        startGame()
     }
 });
 
@@ -45,7 +46,7 @@ function startGame() {
     answerButtons.forEach(button => {
         button.classList.add("font");
     });
-    
+
 }
 
 function startTimer(duration, display, timeoutCallback) {
@@ -67,13 +68,13 @@ function setNextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex]);
     clearInterval(timerInterval); // Reset the timer
     if (currentQuestionIndex === 14) { // Check if it's the last question
-        startTimer(30, document.getElementById("timer-display"), function() {
-            hideQuestion(); 
-            resultsBtn.classList.remove("hide"); 
+        startTimer(30, document.getElementById("timer-display"), function () {
+            hideQuestion();
+            resultsBtn.classList.remove("hide");
         });
     } else {
-        startTimer(30, document.getElementById("timer-display"), moveToNextQuestion); 
-        resultsBtn.classList.add("hide"); 
+        startTimer(30, document.getElementById("timer-display"), moveToNextQuestion);
+        resultsBtn.classList.add("hide");
     }
 }
 

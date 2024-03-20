@@ -84,6 +84,7 @@ The quiz platform comprises an instructions page, 15 questions, and a results pa
     - Provides insight into the game's nature.
     - Guides users on how to play.
     - Encourages users to begin.
+
 <br>
 
 - __User Goals:__
@@ -92,12 +93,13 @@ The quiz platform comprises an instructions page, 15 questions, and a results pa
     - Initiate the game.
     - Experience amusement.
 
-<br>
-
 - __Website Goals:__
     - Captivate and engage users.
     - Clarify gameplay mechanics.
     - Facilitate game initiation.
+
+    <br>
+    <br>
 
 - __Questions Page Section__
     - Presents questions with four answer options within a 30-second timeframe to encourage prompt responses.
@@ -105,13 +107,9 @@ The quiz platform comprises an instructions page, 15 questions, and a results pa
     - Indicates correct/incorrect answers.
     - Tracks question count out of fourty.
 
-<br>
-
 - __User Goals:__
     - Engage in the quiz.
     - Identify the correct answer, even when selecting the wrong one, with adequate viewing time.
-
-<br>
 
 - __Website Goals:__
     - Entertain users through the quiz.
@@ -120,18 +118,17 @@ The quiz platform comprises an instructions page, 15 questions, and a results pa
     - Provide a question counter.
     - Present correct answers.
 
+    <br>
+    <br>
+
 - __Score Section__
     - Exhibits the user's score out of 15.
     - Offers the option to replay.
-
-<br>
 
 - __User Goals:__
     - Discover the number of correct answers.
     - Experience amusement.
     - Have the chance to replay.
-
-<br>
 
 - __Website Goals:__
     - Inform users of their correct answer count.
@@ -145,13 +142,12 @@ The color scheme was generated using the Contrast Grid website.
 
 <br>
 
-![Colour contrast picture](assets/images/contrast-color.png)
-
 ### Typography
 
 #### The fonts for this website were sourced from Google Fonts and Adop Fonts:
 - "Truculenta", sans-serif was chosen for all questions and answers.
 - Arial, sans-serif was selected for all headings and other paragraphs.
+- I have specifically chosen these fonts for their readability, considering that the quiz includes a timer, which encourages users to quickly read and respond to the questions and answers.
 
 ### Images
 
@@ -181,6 +177,8 @@ Wireframes were created for desktop.
     - The logo serves as a consistent link to the home page across all website pages, ensuring easy navigation.
     - By clicking on the logo, users can return to the home page at any point during the game.
     - Hovering over the logo displays a title, reinforcing its function as a link.
+
+    <br>
 
 - __Instructions area__
     - The instructions section is prominently displayed, capturing the user's attention from the outset.
@@ -229,10 +227,15 @@ Wireframes were created for desktop.
         - Incorporated ARIA labels on all images throughout the website to provide descriptive information to screen reader users.
         - Enhanced user engagement and reduced errors by implementing button highlighting in beige when hovered over.
         - Incorporated a feature where, upon selecting an answer, the correct answer is revealed, followed by the display of a button for proceeding to the next question. This prevents users from accidentally skipping questions and enables them to review both correct and incorrect answers.
+        - Ensured color contrast compliance through a color contrast test conducted with Wave, which reported no errors.
 
         <br>
 
         ![Accessibility picture](assets/images/accessability1.png)
+
+        <br>
+
+        ![Colour contrast picture](assets/images/contrast-color.png)
 
     <br>
     
@@ -288,7 +291,7 @@ Wireframes were created for desktop.
 | Answer Feedback Coloring                               | Selected each answer to check if color changes to green for correct and red for incorrect answers. | Passed       |
 | Timer Functionality                                    | Waited without selecting any answer to see if timer proceeds to the next question or shows results. | Passed       |
 | Random Question Display                                | Verified if questions are displayed randomly.                                                       | Passed       |
-| Alert Message for Missing or Invalid User Name        | Attempted to submit without providing a name or providing only spaces to check for alert message.   | Passed       |
+| Alert Message for Missing or Invalid User Name        | Tested the input field under different conditions to confirm its functionality, including scenarios like submitting without a name or entering only spaces. Furthermore, the input field was assessed to ensure it handles characters beyond letters or numbers and inputs longer than 20 characters appropriately.   | Passed       |
 | Result Button Functionality for Score Display         | Clicked on the result button to ensure that scores are shown after completing the quiz.             | Passed       |
 
 <br>
@@ -304,6 +307,8 @@ Wireframes were created for desktop.
 ![CSS validation picture](assets/images/css-validator2.png)
 
 <br>
+
+- __Javascript validator__
 
 ![Javascript validation picture](assets/images/js-validation.png)
 
